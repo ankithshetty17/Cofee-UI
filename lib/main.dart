@@ -1,4 +1,5 @@
 import 'package:cofee/pages/home_page.dart';
+import 'package:cofee/widgets/bottom_navigation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         primarySwatch: Colors.orange
       ),
-      home:const HomePage()
+      home:const BottomNavigator()
     );
   }
 }

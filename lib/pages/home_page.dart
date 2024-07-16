@@ -31,25 +31,7 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       ),
-     bottomNavigationBar: BottomNavigationBar(
-      selectedIconTheme: const IconThemeData(color: Colors.orange,size: 30),
-      unselectedIconTheme:const  IconThemeData(color: Colors.grey,size: 20),
-      items:const  [
-        BottomNavigationBarItem(
-          icon: Icon(Icons.home,),
-          label:''
-          
-        ),
-         BottomNavigationBarItem(
-          icon: Icon(Icons.favorite),
-           label:''
-        ),
-         BottomNavigationBarItem(
-          icon: Icon(Icons.person),
-          label:''
-        ),
-      ]
-     ),
+     
      body:const SafeArea(child:
       Column(
       children: [
