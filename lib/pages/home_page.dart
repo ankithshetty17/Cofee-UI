@@ -14,28 +14,28 @@ class _HomePageState extends State<HomePage> {
   List<Product> products=[
     Product(
             imagepath: 'assets/images/capccino.jpeg', 
-            title: 'Cappucino', 
+            title: 'Cappucino Latte', 
             subtitle: 'WithOat Milk', 
             price: '4.30', 
             rating: 4.1
             ),
     Product(
             imagepath:'assets/images/capccino.jpeg',
-            title: 'Cappucino', 
+            title: 'Cappucino Latte', 
             subtitle: 'WithOat Milk', 
             price: '4.30', 
             rating: 4.1
             ),
     Product(
             imagepath: 'assets/images/capccino.jpeg', 
-            title: 'Cappucino', 
+             title: 'Cappucino Latte',
             subtitle: 'WithOat Milk', 
             price: '4.30', 
             rating: 4.1
             ),
      Product(
             imagepath:'assets/images/capccino.jpeg',
-            title: 'Cappucino', 
+            title: 'Cappucino Latte', 
             subtitle: 'WithOat Milk', 
             price: '4.30',  
             rating: 4.1
@@ -95,7 +95,8 @@ class _HomePageState extends State<HomePage> {
         ),
         ),
         SizedBox(height: 15,),
-        SizedBox(height:300,
+        SizedBox(height:310,
+        child:Padding(padding: EdgeInsets.symmetric(horizontal:8),
         child:
        Expanded(
         child: 
@@ -108,6 +109,7 @@ class _HomePageState extends State<HomePage> {
        }
        )
        ),
+        ),
         ),
       ],
      ),
