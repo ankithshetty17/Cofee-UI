@@ -1,3 +1,4 @@
+import 'package:cofee/pages/cart_page.dart';
 import 'package:cofee/pages/fav_page.dart';
 import 'package:cofee/pages/home_page.dart';
 import 'package:cofee/pages/profile_page.dart';
@@ -20,6 +21,7 @@ class _BottomNavigatorState extends State<BottomNavigator> {
   final List <Widget> _body=const [
     HomePage(),
     FavPage(),
+    CartPage(),
     Profile(),
   ];
   @override
@@ -40,7 +42,11 @@ bottomNavigationBar: BottomNavigationBar(
           
         ),
          BottomNavigationBarItem(
-          icon: Icon(Icons.favorite),
+          icon: Icon(Icons.favorite,),
+           label:''
+        ),
+         BottomNavigationBarItem(
+          icon: Icon(Icons.shopping_bag),
            label:''
         ),
          BottomNavigationBarItem(

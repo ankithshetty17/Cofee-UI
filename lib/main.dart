@@ -1,5 +1,4 @@
-import 'package:cofee/pages/home_page.dart';
-import 'package:cofee/widgets/bottom_navigation.dart';
+import 'package:cofee/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,7 +8,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
 
@@ -19,7 +17,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         primarySwatch: Colors.orange
       ),
-      home:const BottomNavigator()
+      home:const SplashScreen()
     );
   }
 }

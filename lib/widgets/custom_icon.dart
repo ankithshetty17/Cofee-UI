@@ -1,12 +1,19 @@
+
+
 import 'package:flutter/material.dart';
 
 class CustomIcons extends StatelessWidget {
-  final IconData Icons;
-  const CustomIcons({super.key,required this.Icons});
+  final IconData icon;
+  final void Function()? ontap;
+  const CustomIcons({super.key,required this.icon,required this.ontap});
+ 
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
+  Widget build(BuildContext context) {  
+    return GestureDetector(
+      onTap: ontap,
+      child:
+    Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
         gradient:const  LinearGradient(
@@ -15,7 +22,8 @@ class CustomIcons extends StatelessWidget {
           begin: Alignment.bottomRight)
       ),
       padding:const  EdgeInsets.all(6),
-      child: Icon(Icons,color: Colors.grey,),
+      child: Icon(icon,color: Colors.grey,),
+    ),
     );
   }
 }
