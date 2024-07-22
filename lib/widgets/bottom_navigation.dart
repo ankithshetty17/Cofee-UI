@@ -33,25 +33,27 @@ bottomNavigationBar: BottomNavigationBar(
       onTap: _onTapped,
       selectedIconTheme: const IconThemeData(color: Colors.orange,size: 25),
       unselectedIconTheme:const  IconThemeData(color: Colors.grey,size: 20),
-      showSelectedLabels: false,
+      selectedLabelStyle: TextStyle(color:Colors.white,fontWeight: FontWeight.bold),
+      selectedItemColor: Colors.white,
+      showSelectedLabels: true,
       showUnselectedLabels: false,
       items: const [
         BottomNavigationBarItem(
           icon: Icon(Icons.home,),
-          label:''
+          label:'Home'
           
         ),
          BottomNavigationBarItem(
           icon: Icon(Icons.favorite,),
-           label:''
+           label:'Favourite'
         ),
          BottomNavigationBarItem(
           icon: Icon(Icons.shopping_bag),
-           label:''
+           label:'Cart'
         ),
          BottomNavigationBarItem(
           icon: Icon(Icons.person),
-          label:''
+          label:'Profile'
         ),
       ]
      ),

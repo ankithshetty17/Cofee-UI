@@ -11,7 +11,7 @@ class CofeeView extends StatelessWidget {
       width: 210,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(18),
-        color: Color.fromARGB(255, 83, 83, 83),
+        color:Color.fromARGB(255, 41, 41, 41),
       ),
       margin: EdgeInsets.symmetric(horizontal: 6),
       padding: EdgeInsets.all(10),

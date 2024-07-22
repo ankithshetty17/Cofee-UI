@@ -1,5 +1,6 @@
 import 'package:cofee/models/product.dart';
 import 'package:cofee/widgets/cofee_view.dart';
+import 'package:cofee/widgets/cofeeview_text.dart';
 import 'package:cofee/widgets/custom_icon.dart';
 import 'package:flutter/material.dart';
 
@@ -94,7 +95,26 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         ),
-        SizedBox(height: 15,),
+        SizedBox(height: 25,),
+        Container(
+          height: 30,
+          child:
+        ListView(
+        scrollDirection: Axis.horizontal,
+        children: [
+          CofeeviewText(text: 'Cappucino',selected: true,),
+          CofeeviewText(text: 'Cappucino',selected: false,),
+          CofeeviewText(text: 'Cappucino',selected: false,),
+          CofeeviewText(text: 'Cappucino',selected: false,),
+          CofeeviewText(text: 'Cappucino',selected: false,),
+          CofeeviewText(text: 'Cappucino',selected: false,),
+          CofeeviewText(text: 'Cappucino',selected: false,),
+          CofeeviewText(text: 'Cappucino',selected: false,),
+          CofeeviewText(text: 'Cappucino',selected: false,),
+        ],
+        ),
+        ),
+         SizedBox(height: 25),
         SizedBox(height:310,
         child:Padding(padding: EdgeInsets.symmetric(horizontal:8),
         child:
