@@ -57,14 +57,25 @@ class CofeeView extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
+              Row(children:[
               Text(
-                "\$${product.price}",
+                "\$",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 16,
                   color: Colors.orange
                 ),
               ),
+              SizedBox(width: 3,),
+               Text(
+                product.price,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 22,
+                  color: Colors.orange
+                ),
+              ),
+              ],),
             
              ElevatedButton(onPressed: (){},
               child: Icon(Icons.add,color: Colors.white,size: 20,),

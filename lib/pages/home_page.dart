@@ -64,11 +64,31 @@ class _HomePageState extends State<HomePage> {
       Column(
       children: [
         Padding(padding: EdgeInsets.symmetric(horizontal: 25,vertical: 10),
-        child:Text('FIND THE BEST COFEE FOR YOU.',
+        child:Text.rich(
+          TextSpan(
+            children:[
+        
+        TextSpan(text: 'FIND THE BEST ',
         style: TextStyle(
           fontFamily: 'Bebas',
           fontSize: 40,
         )
+        ),
+         TextSpan(text: 'COFEE ',
+        style: TextStyle(
+          fontFamily: 'Bebas',
+          fontSize: 40,
+          color: Colors.orange
+        )
+        ),
+         TextSpan(text: 'FOR YOU.',
+        style: TextStyle(
+          fontFamily: 'Bebas',
+          fontSize: 40,
+        )
+        ),
+            ],
+          ),
         ),
         ),
         SizedBox(height: 25,),
