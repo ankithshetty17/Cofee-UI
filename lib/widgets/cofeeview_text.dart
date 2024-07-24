@@ -7,7 +7,7 @@ class CofeeviewText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(padding: EdgeInsets.symmetric(horizontal: 20),
+    return Padding(padding: EdgeInsets.symmetric(horizontal: 19),
     child:
     Text(
       text,
