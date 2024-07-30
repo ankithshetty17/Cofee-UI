@@ -11,10 +11,10 @@ class CofeeView extends StatelessWidget {
       width: 210,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(18),
-        color:Color.fromARGB(255, 41, 41, 41),
+        color:const Color.fromARGB(255, 41, 41, 41),
       ),
-      margin: EdgeInsets.symmetric(horizontal: 6),
-      padding: EdgeInsets.all(10),
+      margin:const  EdgeInsets.symmetric(horizontal: 6),
+      padding:const EdgeInsets.all(10),
       child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
        mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -33,18 +33,18 @@ class CofeeView extends StatelessWidget {
                   ),
                 ),
             
-                SizedBox(height: 10),
+              const   SizedBox(height: 10),
                 Text(
                   product.title,
-                  style: TextStyle(
+                  style:const  TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 19,
                   ),
                 ),
-                SizedBox(height: 5),
+             const    SizedBox(height: 5),
                 Text(
                   product.subtitle,
-                  style: TextStyle(
+                  style:const  TextStyle(
                     color: Colors.grey,
                     fontWeight: FontWeight.bold,
                     fontSize: 12,
@@ -58,7 +58,7 @@ class CofeeView extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Row(children:[
-              Text(
+            const   Text(
                 "\$",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -66,10 +66,10 @@ class CofeeView extends StatelessWidget {
                   color: Colors.orange
                 ),
               ),
-              SizedBox(width: 3,),
+             const  SizedBox(width: 3,),
                Text(
                 product.price,
-                style: TextStyle(
+                style:const  TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 22,
                   color: Colors.orange
@@ -82,7 +82,7 @@ class CofeeView extends StatelessWidget {
               style: ElevatedButton.styleFrom(
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                 primary: Colors.orange,
-                minimumSize: Size(20,40)
+                minimumSize: const Size(20,40)
               ),
               )
             ],
